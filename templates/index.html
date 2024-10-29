@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="/static/js/test2.js" defer></script>
+<script src="/static/js/style.js" defer></script>
+<link href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <title>MoniTest</title>
+</head>
+<body>
+<div class="content_vid">
+<div class="pictures" style="top: 0">
+    <i style="font-size: 5.5em;" class="bi bi-display"></i>
+</div>
+    <div style="height: auto; width: auto; padding: 5px; background-color: rgba(220,220,230,0.7); border-radius: 10px">
+    <h4 style="color: crimson">Предупреждение</h4>
+    <p style="color: crimson"> Тест содержит быстро сменяющиеся яркие изображения, что может спровоцировать приступ у людей, склонных к эпилепсии. Рекомендуется избегать прямого взгляда на монитор во время проведения теста.</p>
+
+    </div>
+        <h4>Проверьте свой экран на отлично: комплексный тест монитора, дисплея и телевизора!</h4>
+    <p>Что вы можете проверить:</p>
+    <p>- Битые пиксели: Найдите дефектные пиксели, которые мешают наслаждаться картинкой.<br>
+- Цветопередача: Убедитесь, что цвета отображаются точно и реалистично.<br>
+- Отклик: Проверьте, насколько быстро экран реагирует на ваши действия, особенно важно для геймеров.<br>
+- Другие параметры: Тесты на четкость, контрастность, равномерность подсветки и многое другое.<br></p>
+<button class="full" type="submit">Start Test</button>
+    <button class="full_1" type="submit">One-color test</button>
+     <button class="full_2" type="submit">Uniformity test</button>
+<button class="full_3" type="submit">Reaction test</button>
+</div>
+<div id="test-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; z-index: 1000;">
+  <div id="test-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <!-- Здесь будет ваш код с тестами -->
+    <canvas id="test-canvas" style="width: 100%;height: 100%"></canvas>
+    <button id="close-test" style="position: absolute; top: 10px; right: 10px; color: darkgrey; background-color: rgba(157, 157, 161,0.39); border: none; border-radius:10px;cursor: pointer;"><i style="font-size: 2.5em;" class="bi bi-reply"></i></button>
+  </div>
+</div>
+<div id="test-container_1" style="display: none; position: fixed; top: 0; left: 0; background-color: black; z-index: 1000;">
+    <div id="test-content_1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <canvas id="test-canvas_1" style="width: 100%; height: 100%;"></canvas>
+        <button id="close-test_1" style="position: absolute; top: 10px; right: 10px; color: darkgrey; background-color: rgba(157, 157, 161,0.39); border: none; border-radius:10px; cursor: pointer;">
+            <i style="font-size: 2.5em;" class="bi bi-reply"></i>
+        </button>
+    </div>
+</div>
+<div id="test-container_2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; z-index: 1000;">
+    <div id="test-content_2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <canvas id="test-canvas_2" style="width: 100%; height: 100%;"></canvas>
+        <button id="close-test_2" style="position: absolute; top: 10px; right: 10px; color: darkgrey; background-color: rgba(157, 157, 161,0.39); border: none; border-radius:10px; cursor: pointer;">
+            <i style="font-size: 2.5em;" class="bi bi-reply"></i>
+        </button>
+    </div>
+</div>
+<div id="test-container_3" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; z-index: 1000;">
+    <div id="test-content_3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <canvas id="test-canvas_3" style="width: 100%; height: 100%;"></canvas>
+        <button id="close-test_3" style="position: absolute; top: 10px; right: 10px; color: darkgrey; background-color: rgba(157, 157, 161,0.39); border: none; border-radius:10px; cursor: pointer;">
+            <i style="font-size: 2.5em;" class="bi bi-reply"></i>
+        </button>
+    </div>
+</div>
+</body>
+</html>
