@@ -4,10 +4,10 @@ html,body {
     height: 100%;
     margin: 0;
         background-image: url('/static/img/Ai.jpg');
-    /* Настройка фонового изображения */
-    background-size: cover; /* Покрывает весь фон */
-    background-repeat: no-repeat; /* Не повторяем изображение */
-    background-position: center; /* Центрируем изображение */
+
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
     padding: 0;
     display: flex;
     font-family: "Arial";
@@ -19,8 +19,8 @@ html,body {
 
 
     ::-webkit-scrollbar {
-        width: 10px; /* ширина для вертикального скролла */
-        height: 40%; /* высота для горизонтального скролла */
+        width: 10px; 
+        height: 40%; 
         border-radius: 15px;
 
     }
@@ -44,7 +44,7 @@ html,body {
     margin-top: 0px;
 
     flex-direction: column;
-    text-align: center; /*  Добавьте  text-align: center */
+    text-align: center; 
     align-items: center;
     background-color: rgba(200, 200, 210,0.55);
     backdrop-filter: blur(10px);
