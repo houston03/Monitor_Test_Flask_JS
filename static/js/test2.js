@@ -7,7 +7,7 @@
   const ctx = testCanvas.getContext('2d');
 
   const images = [
-    '/static/img/1.jpg', // Замените на пути к вашим изображениям
+    '/static/img/1.jpg', 
     '/static/img/2.jpg',
     '/static/img/3.jpg',
       '/static/img/4.jpg',
@@ -86,12 +86,12 @@ window.addEventListener('resize', () => {
   startTestButton.addEventListener('click', () => {
     testContainer.style.display = 'block';
     changeImage();
-    setInterval(changeImage, 250); // Меняем изображение каждые 1000 миллисекунд (1 секунда)
+    setInterval(changeImage, 250);
   });
 
   closeTestButton.addEventListener('click', () => {
     testContainer.style.display = 'none';
-    clearInterval(changeImage); // Останавливаем интервал при выходе из теста
+    clearInterval(changeImage);
   });
 
   document.addEventListener('keydown', (event) => {
@@ -102,10 +102,9 @@ window.addEventListener('resize', () => {
   });
 
 
-// ... (ваш код с изображениями)
 
 startTestButton.addEventListener('click', () => {
-  // Запускаем полноэкранный режим
+м
   if (document.documentElement.requestFullscreen) {
     document.documentElement.requestFullscreen();
   } else if (document.documentElement.mozRequestFullScreen) {
@@ -122,7 +121,7 @@ startTestButton.addEventListener('click', () => {
 });
 
 closeTestButton.addEventListener('click', () => {
-  // Выходим из полноэкранного режима
+ 
   if (document.exitFullscreen) {
     document.exitFullscreen();
   } else if (document.mozCancelFullScreen) {
@@ -139,7 +138,7 @@ closeTestButton.addEventListener('click', () => {
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
-    // Выходим из полноэкранного режима
+  
     if (document.exitFullscreen) {
       document.exitFullscreen();
     } else if (document.mozCancelFullScreen) {
@@ -187,7 +186,7 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-// Обработчик события для закрытия теста
+
 closeTestButton_1.addEventListener('click', () => {
   if (document.fullscreenElement) {
     document.exitFullscreen();
@@ -195,7 +194,7 @@ closeTestButton_1.addEventListener('click', () => {
   testContainer_1.style.display = 'none'; // Скрыть контейнер после выхода из полноэкранного режима
 });
 
-// Обработка события выхода из полноэкранного режима
+
 document.addEventListener('fullscreenchange', () => {
   if (!document.fullscreenElement) {
     testContainer_1.style.display = 'none'; // Скрыть контейнер после выхода из полноэкранного режима
